@@ -1,0 +1,7 @@
+services:
+  flaskapp:
+    build: .
+    container_name: flaskapp_container
+    ports:
+      - "5050:5000"   # nanti akses di http://localhost:5050
+    restart: unless-stopped
